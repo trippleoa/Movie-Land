@@ -1,0 +1,48 @@
+.containers{
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+.logo a{
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.nav-link{
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-link a{
+  font-weight: 500;
+  text-decoration: none;
+
+}
+.menu{
+  font-size: 1.5rem;
+  display: none;
+  margin-right: 40px;
+  cursor: pointer;
+}
+@media (max-width:768px){
+  .nav-link {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 50px;
+    top: 70px;
+    padding: 1.5rem;
+    background-color: black;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    width: 200px;
+  }
+  .nav-link.active{
+    display: flex;
+  }
+  .menu{
+    display: block;
+    cursor: pointer;
+  }
+
+
+}
